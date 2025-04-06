@@ -61,7 +61,7 @@
         .tagline {
             color: var(--accent-color);
             font-size: .7rem;
-            margin: 1rem 0;
+            margin: .3rem 0;
             font-weight: 500;
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
@@ -462,6 +462,39 @@
                 height: 80vh;
             }
         }
+	.gst-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--accent-color);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.gst-badge i {
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.gst-badge:hover {
+    background: rgba(255, 193, 7, 0.2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .gst-badge {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+}
+
      </style>
 </head>
 <body>
@@ -469,9 +502,13 @@
     <!-- Header -->
     <header class="header">
         <h1>Herbal Health Care </h1>
+	
         <p class="tagline">Result Oriented | No side-effect | 100% Ayurvedic</p>
+<div class="gst-badge">
+        <i class="fas fa-certificate"></i>
+        GSTIN: 10GKSPS9073K1ZB
+    </div>
     </header>
-
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
@@ -806,6 +843,21 @@
         <a href="https://wa.me/919758264390?text=माजून%20ए%20अरबी%20डायमंड%20गोल्ड%20गोल्ड%20कैप्सूल%20खरीदना%20चाहता%20हूँ" class="btn buy-now">अभी खरीदें</a>
     </div>
 </div>
+<!-- Product 22 -->
+<div class="product-card">
+    <img src="product22.jpg" alt="तिला कामराज बराहे माजलूक" class="product-image">
+    <h3 class="product-title">💦 तिला कामराज बराहे माजलूक</h3>
+    <p>✅ मास्टर्बेशन से होने वाली कमजोरी का रामबाण इलाज</p>
+    <div class="price">
+        <span class="original-price">कीमत: 2499 रुपये</span><br>
+        <span class="discounted-price">डिस्काउंट के बाद: 1249 रुपये</span>
+    </div>
+    <div class="btn-group">
+        <a href="#read-more" class="btn read-more">और जानें</a>
+        <a href="https://wa.me/919758264390?text=तिला%20कामराज%20बराहे%20माजलूक%20तेल%20खरीदना%20चाहता%20हूँ" 
+           class="btn buy-now">अभी खरीदें</a>
+    </div>
+</div>
         </div>
     </div>
 <!-- Floating Icons -->
@@ -876,7 +928,7 @@
             title="Embedded PDF">
         
         <!-- Optional fallback content -->
-        <p> download the PDF to view it: 
+        <p> Download the PDF to view it: 
            <a href="your-file.pdf">Download PDF</a>.
         </p>
     </div>
