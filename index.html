@@ -494,6 +494,28 @@
     }
 }
 
+.marquee-content {
+    font-family: 'Noto Sans Devanagari', 'Segoe UI', sans-serif;
+    font-size: 1.4rem;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.8rem 0;
+    letter-spacing: 1px;
+}
+
+marquee {
+    overflow: hidden;
+}
+
+/* हिंदी फॉन्ट सपोर्ट */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500&display=swap');
+
+@media (max-width: 768px) {
+    .marquee-content {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+    }
+}
      </style>
 </head>
 <body>
@@ -524,7 +546,15 @@
             <div class="hamburger" onclick="toggleMenu()">☰</div>
         </div>
     </nav>
-
+<div class="speciality-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        <div class="marquee-content">
+            🩺 बवासीर • 🩺 शुगर • 🌿 ल्यूकोरिया • 💊 बांझपन • 🌱 बॉडी कोर्स 
+            • 🩺 स्टोन पथरी कोर्स • 🌸 लेडीज़ प्रॉब्लम (PCOD/PCOS) • 🍃 नशा मुक्ति कोर्स 
+            • 🌿 अमराज़-ए-मेदा कोर्स • 💊 सफेद इलाज • 🌱 100% आयुर्वेदिक
+        </div>
+    </marquee>
+</div>
     <div class="container" id="products">
         <div class="product-grid">
 	<!-- Product 0 -->
@@ -680,8 +710,8 @@
                
 <!-- Product 10 -->
             <div class="product-card">
-                <img src="product10.jpg" alt="माज़ूने शाही कश्ता अबरक कोर्स" class="product-image">
-                <h3 class="product-title">🩺 माज़ूने शाही कश्ता अबरक कोर्स</h3>
+                <img src="product10.jpg" alt="माज़ूने शाही कुश्ता अबरक कोर्स" class="product-image">
+                <h3 class="product-title">🩺 माज़ूने शाही कुश्ता अबरक कोर्स</h3>
                 <p>✅ यौन स्वास्थ्य में सुधार का विशेष कार्यक्रम</p>
                 <div class="price">
                     <span class="original-price">कीमत: 3500 रुपये</span><br>
@@ -689,7 +719,7 @@
                 </div>
                 <div class="btn-group">
                     <a href="https://harbalhealthcare.blogspot.com/2025/04/blog-post_46.html" class="btn read-more">अधिक जानें</a>
-                    <a href="https://wa.me/919758264390?text=माज़ूने%20शाही%20कश्ता%20अबरक%20कोर्स%20खरीदना%20चाहता%20हूँ" class="btn buy-now">अभी खरीदें</a>
+                    <a href="https://wa.me/919758264390?text=माज़ूने%20शाही%20कुश्ता%20अबरक%20कोर्स%20खरीदना%20चाहता%20हूँ" class="btn buy-now">अभी खरीदें</a>
                 </div>
             </div>
 
@@ -815,8 +845,8 @@
 
 <!-- Product 19 -->
 <div class="product-card">
-    <img src="product19.jpg" alt="पलंग तोड़ शबाब-ए-माजून" class="product-image">
-    <h3 class="product-title">🔥 पलंग तोड़ शबाब-ए-माजून</h3>
+    <img src="product19.jpg" alt="माजून-ए-शबाब पलंगतोड़" class="product-image">
+    <h3 class="product-title">🔥 माजून-ए-शबाब पलंगतोड़</h3>
     <p>✅ पुरुषों की यौन कमजोरी का शक्तिशाली इलाज</p>
     <div class="price">
         <span class="original-price">कीमत: 1500 रुपये</span><br>
@@ -859,8 +889,8 @@
 </div>
 <!-- Product 22 -->
 <div class="product-card">
-    <img src="product22.jpg" alt="तिला कामराज बराहे मजलूक" class="product-image">
-    <h3 class="product-title">💦 तिला कामराज बराहे मजलूक</h3>
+    <img src="product22.jpg" alt="तिला कामराज बराहे मजलूक के लिए" class="product-image">
+    <h3 class="product-title">💦 तिला कामराज बराहे मजलूक के लिए</h3>
     <p>✅ मास्टर्बेशन से होने वाली कमजोरी का रामबाण इलाज</p>
     <div class="price">
         <span class="original-price">कीमत: 2499 रुपये</span><br>
@@ -874,6 +904,14 @@
 </div>
         </div>
     </div>
+
+<div class="speciality-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        <div class="marquee-content">
+            My Dear Friends  For your best treatment of men and women through 100% Pure and Natural effective Ayurvedic Medicines And to get home delivery Service All Over India Medicine for all diseases.
+        </div>
+    </marquee>
+
 <!-- Floating Icons -->
     <div class="float-icons">
         <a href="https://t.me/JadiButiseIlaaj" 
@@ -942,9 +980,8 @@
             title="Embedded PDF">
         
         <!-- Optional fallback content -->
-        <p>Your browser does not support PDF embedding. 
-           Please download the PDF to view it: 
-           <a href="your-file.pdf">Download PDF</a>.
+        <p>Download the PDF to view it: 
+           <a href="catelog.pdf">Download PDF</a>.
         </p>
     </div>
      <footer class="footer">
@@ -971,7 +1008,7 @@
                     <p><i class="far fa-envelope"></i> Email: herbalhealthcare97@gmail.com</p>
                 </div>
             </div>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.2242628067393!2d84.6782547754378!3d26.864615076675843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399343d8f06f8dc7%3A0xd928b2853f7c8187!2z2K3YqNuM2Kgg2KfZhNmE24Eg2LTZhdiz24wg2KfZhNmC2KfYs9mF24w!5e0!3m2!1sen!2sin!4v1744128218819!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!-- Section 3: Social Follow -->
             <div class="footer-section">
                 <h3>हमें फॉलो करें</h3>
